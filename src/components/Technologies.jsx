@@ -5,12 +5,24 @@ import unreal from "../brands/image.png";
 import unity from "../brands/image copy.png";
 import ocolus from "../brands/image copy 2.png";
 import vive from "../brands/image copy 3.png";
+import { useState } from "react";
 
 function Technologies() {
+  const [currentIndex, setCurrentIndex] = useState(0);
+  const totalSlides = 4;
+
+  const nextSlide = () => {
+    setCurrentIndex((prevIndex) => (prevIndex + 1) % totalSlides);
+  };
+
+  const prevSlide = () => {
+    setCurrentIndex((prevIndex) => (prevIndex - 1 + totalSlides) % totalSlides);
+  };
   return (
     <>
       {" "}
       <div
+        className="techs"
         style={{
           display: "flex",
           justifyContent: "center",
@@ -27,13 +39,14 @@ function Technologies() {
             position: "absolute",
             color: "white",
             textAlign: "center",
-            fontSize: "3vw",
+
             fontWeight: "700px",
             background: "transparent",
           }}
         >
           TECHNOLOGIES & HARDWARE <br />
           <p
+            id="p2"
             style={{
               color: "white",
               fontWeight: "300px",
@@ -68,11 +81,40 @@ function Technologies() {
           />
         </button>
       </div>
-      <div>
+      <div id="brands">
         <img className="image-brand" src={unreal} />
         <img className="image-brand" src={unity} />
         <img className="image-brand" src={ocolus} />
         <img className="image-brand" src={vive} />
+      </div>
+      <div className="carousel-container">
+        <button className="carousel-control prev" onClick={prevSlide}>
+          &#10094;
+        </button>
+        <div className="carousel">
+          <div
+            className="carousel-inner"
+            style={{
+              transform: `translateX(-${currentIndex * 100}%)`,
+            }}
+          >
+            <div className="carousel-item">
+              <img className="image-brand" src={unreal} alt="Unreal Engine" />
+            </div>
+            <div className="carousel-item">
+              <img className="image-brand" src={unity} alt="Unity" />
+            </div>
+            <div className="carousel-item">
+              <img className="image-brand" src={ocolus} alt="Ocolus" />
+            </div>
+            <div className="carousel-item">
+              <img className="image-brand" src={vive} alt="Vive" />
+            </div>
+          </div>
+        </div>
+        <button className="carousel-control next" onClick={nextSlide}>
+          &#10095;
+        </button>
       </div>
     </>
   );

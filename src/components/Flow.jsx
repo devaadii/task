@@ -4,7 +4,7 @@ import vector from "../vector/image.png";
 import smallArrow from "../icons/image copy 2.png";
 function Flow() {
   return (
-    <>
+    <div id="flows">
       <div style={{ margin: "40px" }}>
         {" "}
         <div id="intro">
@@ -15,7 +15,6 @@ function Flow() {
               color: "white",
               fontWeight: "300",
               display: "inline",
-              fontSize: "60px",
             }}
           >
             <span id="span" style={{ color: "white", fontWeight: "700" }}>
@@ -148,7 +147,7 @@ function Flow() {
           </div>
         </div>
       </div>
-    </>
+    </div>
   );
 }
 
