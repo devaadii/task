@@ -1,0 +1,518 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
+
+a,
+button {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 700;
+}
+
+* {
+  background-color: #302c42;
+  font-family: "Montserrat", sans-serif;
+}
+
+nav {
+  position: relative;
+  z-index: 1;
+  background: transparent;
+}
+
+#log0 {
+  height: 10vh;
+}
+
+a {
+  text-decoration: none;
+  color: white;
+  margin: 20px;
+  background-color: transparent;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 700;
+}
+
+#contact_button {
+  border-radius: 50px;
+  height: 5vh;
+  width: 10vw;
+  border-color: white;
+  color: white;
+  margin: 20px;
+  border-style: groove;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 700;
+}
+
+#join_button {
+  border-radius: 50px;
+  height: 5vh;
+  width: 10vw;
+  background: linear-gradient(90deg, #8176af 0%, #c0b7e8 100%);
+  border: none;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 700;
+}
+
+#logo_div {
+  display: flex;
+  align-items: center;
+}
+
+#hydra {
+  height: 6vh;
+  margin: 0 10px;
+}
+
+.toggler {
+  display: none;
+}
+
+/* Hero Section */
+#hero-img {
+  height: 98vh;
+  position: absolute;
+  right: 0;
+  top: -8vh;
+  overflow: hidden;
+  background: transparent;
+}
+
+#hero {
+  height: 80vh;
+  color: white;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 700;
+  background-color: rgba(0, 0, 0, 0);
+}
+
+#hero-content {
+  width: 40vw;
+  background-color: transparent;
+  position: relative;
+  z-index: 2;
+}
+
+span {
+  background-image: linear-gradient(91.57deg, #c0b7e8 -1.02%, #8176af 36.25%);
+  color: transparent;
+  background-clip: text;
+  -webkit-background-clip: text;
+}
+
+h2 {
+  font-size: 50px;
+  margin: 12vh 0 0 40px;
+  background-color: transparent;
+}
+
+p {
+  font-weight: 400;
+  margin: 20px 0 0 40px;
+  background-color: transparent;
+}
+
+.button-arrow {
+  display: flex;
+  justify-content: flex-start;
+  margin: 40px;
+  align-items: center;
+  background-color: transparent;
+}
+
+#vector {
+  position: absolute;
+  z-index: 1;
+  background-color: transparent;
+  height: 70vh;
+}
+
+.long-section {
+  display: flex;
+  height: 15vh;
+  z-index: 1;
+  padding: 20px;
+  margin: 40px;
+  margin-top: 90px;
+  justify-content: center;
+  position: relative;
+  background: radial-gradient(
+    50% 2900.76% at 50% 53.89%,
+    rgba(58, 52, 86, 0.95) 0%,
+    #211e2e 100%
+  );
+  box-shadow: 0px 4px 4px 0px rgba(192, 183, 232, 0.01);
+  border-radius: 500px;
+}
+
+.big {
+  color: white;
+  font-size: large;
+  background: rgba(0, 0, 0, 0);
+}
+
+.small {
+  color: white;
+  font-weight: 400;
+  background: rgba(0, 0, 0, 0);
+}
+
+.single {
+  display: flex;
+  align-items: center;
+  background: rgba(0, 0, 0, 0);
+}
+
+.gps {
+  height: 9vh;
+  background: rgba(0, 0, 0, 0);
+}
+
+.call {
+  height: 7vh;
+  background: rgba(0, 0, 0, 0);
+}
+
+.mess {
+  height: 7vh;
+  background: rgba(0, 0, 0, 0);
+}
+#intro-text {
+  font-size: "60px";
+}
+#vr-flex {
+  margin-top: "40px";
+}
+#vrtext {
+  width: "40vw";
+  margin: "0";
+}
+
+@media (max-width: 768px) {
+  #vector {
+    display: none;
+  }
+  #log0 {
+    height: 8vh;
+  }
+
+  #hydra {
+    height: 4.8vh;
+    align-self: flex-end;
+  }
+
+  .links-container {
+    display: none;
+  }
+
+  .links-container.show {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    top: 60px;
+    right: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+  }
+
+  #button-container {
+    display: none;
+  }
+
+  .toggler {
+    display: block;
+    border: none;
+    margin: 20px;
+    align-self: flex-end;
+  }
+
+  #toggle-icon {
+    height: 3vh;
+  }
+
+  /* Hero Section */
+  #hero {
+    height: auto;
+    padding: 20px;
+  }
+
+  #hero-img {
+    width: 100%;
+    height: auto;
+    position: relative;
+    top: -8vh;
+  }
+
+  #hero-content {
+    width: 100%;
+    margin-top: 10px;
+    text-align: center;
+    bottom: 80px;
+  }
+
+  h2 {
+    font-size: 32px;
+    margin: 0;
+  }
+
+  p {
+    display: none;
+  }
+
+  .button-arrow {
+    flex-direction: column;
+    margin: 20px 0;
+  }
+
+  .button-arrow img {
+    margin: 20px 0 0;
+  }
+
+  .long-section {
+    flex-direction: column;
+    height: auto;
+    padding: 20px;
+    margin: 20px 0;
+  }
+
+  .single {
+    flex-direction: column;
+    align-items: flex-start;
+    margin: 10px 0;
+  }
+
+  .single img {
+    margin-bottom: 10px;
+  }
+}
+#join_button {
+  width: "12vw";
+  font-weight: "700";
+  height: "7vh";
+}
+#slider {
+  display: none;
+}
+
+@media (max-width: 480px) {
+  #hero-content {
+    padding: 10px;
+  }
+
+  h2 {
+    font-size: 28px;
+    margin: 10px 0;
+  }
+
+  .button-arrow {
+    margin: 10px 0;
+    display: flex;
+    justify-content: center;
+  }
+
+  .button-arrow img {
+    display: none;
+  }
+
+  .single {
+    align-items: center;
+  }
+
+  .single img {
+    margin: 0 0 10px;
+  }
+  #join_button {
+    width: 50vw;
+    margin: 20px 5px 5px 20px;
+  }
+  .long-section {
+    display: none;
+  }
+  #slider {
+    display: inline;
+  }
+  .single {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+  }
+  .single > img {
+    display: inline;
+    align-self: center;
+  }
+}
+/* 
+introduction page */
+#intro {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 50px;
+}
+#intro-text {
+  display: flex;
+  align-items: end;
+}
+#intro1 {
+  width: 50vw;
+  display: flex;
+  align-items: last baseline;
+}
+#intro-arrow {
+  display: inline;
+  width: 10vw;
+  align-self: last baseline;
+  position: relative;
+  top: 20px;
+  margin: 0 10px 0 10px;
+}
+#vr {
+  width: 30vw;
+  margin-top: 95px;
+  position: relative;
+}
+/* cards */
+.card {
+  background: radial-gradient(50% 50% at 50% 50%, #433d60 0%, #211e2e 100%);
+  height: 50vh;
+  text-align: center;
+}
+.card-title {
+  background: transparent;
+  color: #fff;
+  font-size: 24px;
+  margin: 0%;
+}
+.card-body {
+  background: transparent;
+  display: flex;
+  flex-direction: column;
+}
+.card-text {
+  margin: 0;
+  margin-bottom: 10px;
+  color: #fff;
+  font-weight: 400;
+  font-size: 12px;
+  display: flex;
+  justify-content: center;
+  padding: 10px 20px;
+  padding-top: 0%;
+
+  line-height: 14.63px;
+  text-align: left;
+}
+.card-img-top {
+  height: 15vh;
+  background: transparent;
+
+  border: 20px solid rgba(14, 14, 14, 0.32);
+  border-radius: 50%;
+  margin: 20px;
+}
+.card-hr {
+  margin: 10px 70px 10px 70px;
+  border: 1px solid rgba(192, 183, 232, 0.33);
+}
+
+/* techno */
+
+#girl {
+  width: 90vw;
+  border-radius: 150px;
+  height: 40vh;
+}
+.image-brand {
+  width: 20vw;
+  margin: 2vw;
+}
+/* circle */
+#circle {
+  height: 20vh;
+  display: flex;
+  justify-content: space-around;
+}
+.circles {
+  border-radius: 500px;
+  height: 159px;
+  width: 159px;
+  background: linear-gradient(90deg, #8176af 0%, #c0b7e8 100%);
+  border: none;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 700;
+}
+#label {
+  width: 100vw;
+  display: flex;
+  justify-content: space-around;
+}
+#vector {
+  width: 100vw;
+  height: 20vh;
+  margin: 0;
+  position: absolute;
+  background: transparent;
+  z-index: 1;
+}
+
+.labelh {
+  font-family: Montserrat;
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 29.26px;
+  text-align: left;
+  color: white;
+}
+#label img {
+  width: 2vw;
+}
+#span {
+  font-size: 60px;
+}
+#intro-text {
+  font-size: 60px;
+}
+@media (max-width: 768px) {
+  #intro {
+    display: flex;
+    flex-direction: column;
+  }
+  #span {
+    font-size: 40px;
+  }
+  #intro-text {
+    font-size: 40px;
+    text-align: center;
+  }
+  #intro-text img {
+    display: none;
+  }
+  #intro1 {
+    display: none;
+  }
+  #vr-flex {
+    display: flex;
+    flex-direction: column;
+    margin-top: 0;
+  }
+  #vr {
+    width: 90vw;
+  }
+  #abouthydra {
+    display: none;
+  }
+  #vrtext {
+    display: flex;
+    width: 100%;
+    margin-top: 50px;
+    margin-left: 0;
+  }
+  #vr-flex button {
+    display: none;
+  }
+}
+
+/* 
+form */
+
+input {
+  background: transparent;
+}
