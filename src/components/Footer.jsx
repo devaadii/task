@@ -26,6 +26,7 @@ const Footer = () => {
             alt="Hydra Logo"
           />
         </div>
+        <hr className="links-hr"></hr>
         <div className="links-section">
           <div className="column">
             <ul>
@@ -46,6 +47,7 @@ const Footer = () => {
               </li>
             </ul>
           </div>
+          <hr className="links-hr"></hr>
           <div className="column">
             <ul>
               <li>
@@ -63,6 +65,7 @@ const Footer = () => {
             </ul>
           </div>
         </div>
+        <hr className="links-hr"></hr>
         <div className="social-media-section">
           <h3>SOCIALIZE WITH HYDRA</h3>
           <div className="social-icons">

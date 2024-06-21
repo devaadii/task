@@ -730,8 +730,10 @@ textarea {
 .links-section {
   display: flex;
   justify-content: space-between;
-  flex: 2;
+  flex: 1;
   background: transparent;
+  height: 100%;
+  font-size: larger;
 }
 .links-section h3 {
   font-size: 12px;
@@ -819,6 +821,21 @@ ul {
   color: white;
   font-size: larger;
 }
+.links-hr {
+  height: 200px;
+  border: 3px solid;
+  margin: 0 20px;
+  border-image-source: linear-gradient(
+    179.87deg,
+    #343045 0.47%,
+    #343045 0.47%,
+    #c0b7e8 35.21%,
+    #8176af 68.91%,
+    #343045 99.5%
+  );
+
+  border-image-slice: 1;
+}
 @media (max-width: 768px) {
   .footer-content {
     display: flex;
@@ -865,6 +882,9 @@ ul {
   }
   .call {
     margin-right: 20px;
+  }
+  .links-hr {
+    display: none;
   }
 }
 .button-foot {
