@@ -12,7 +12,7 @@ function Form() {
       <h2 className="form-title" style={{ color: "white" }}>
         JOIN HYDRA
       </h2>
-      <hr id="form-hr"></hr>
+      <hr id="foot-hr"></hr>
       <p
         className="form-subtitle"
         style={{ color: "white", textAlign: "center" }}

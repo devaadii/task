@@ -65,7 +65,9 @@ function Secondpage() {
               >
                 ABOUT<br></br>
               </span>
-              HYDRA VR
+              <span id="none" style={{ color: "white" }}>
+                HYDRA VR
+              </span>
               <p
                 id="vrtext"
                 style={{

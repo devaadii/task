@@ -12,7 +12,7 @@ import "slick-carousel/slick/slick-theme.css";
 
 function Hero() {
   const settings = {
-    dots: true,
+    dots: false,
     infinite: true,
     speed: 500,
     slidesToShow: 1,
@@ -90,9 +90,7 @@ function Hero() {
             <div style={{ background: "rgba(0, 0, 0, 0)", margin: "8px" }}>
               <span className="big">Pay Us a Visit</span>
               <br />
-              <span className="small">
-                Union St, Seattle, WA 98101, United States
-              </span>
+              <span className="small">Union St, Seattle, WA 98101</span>
             </div>
           </div>
           <div className="single">
@@ -105,7 +103,12 @@ function Hero() {
               <img className="call" src={call} alt="loca" />
             </div>
 
-            <div style={{ background: "rgba(0, 0, 0, 0)", margin: "8px" }}>
+            <div
+              style={{
+                background: "rgba(0, 0, 0, 0)",
+                margin: "8px",
+              }}
+            >
               <span className="big">Call Us</span>
               <br />
               <span className="small">+1 234 567 890</span>
@@ -120,7 +123,12 @@ function Hero() {
             >
               <img className="mess" src={message} alt="loca" />
             </div>
-            <div style={{ background: "rgba(0, 0, 0, 0)", margin: "8px" }}>
+            <div
+              style={{
+                background: "rgba(0, 0, 0, 0)",
+                margin: "8px",
+              }}
+            >
               <span className="big">Send Us a Message</span>
               <br />
               <span className="small">info@example.com</span>

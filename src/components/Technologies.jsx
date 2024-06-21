@@ -89,7 +89,7 @@ function Technologies() {
         <img className="image-brand" src={ocolus} />
         <img className="image-brand" src={vive} />
       </div>
-      <div className="carousel-container" style={{ margin: "20px auto" }}>
+      <div className="carousel-container" style={{ margin: "80px auto" }}>
         <button className="carousel-control prev" onClick={prevSlide}>
           <img
             src={left}

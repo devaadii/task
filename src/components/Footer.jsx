@@ -74,7 +74,8 @@ const Footer = () => {
           </div>
           <button
             id="join_button"
-            style={{ margin: "50px 0", marginRight: "auto" }}
+            className="button-foot"
+            style={{ margin: "50px 0" }}
           >
             Build Your World
           </button>
@@ -82,7 +83,9 @@ const Footer = () => {
       </div>
       <hr id="foot-hr" />
       <div className="copyright-section" style={{ background: "transparent" }}>
-        2023 © HYDRA LANDING PAGE - BY ZINE. E. FALOUTI - ALL RIGHTS RESERVED
+        <span> 2023 © HYDRA LANDING PAGE</span>{" "}
+        <span>- BY ZINE. E. FALOUTI</span>
+        <span>- ALL RIGHTS RESERVED</span>
       </div>
     </footer>
   );

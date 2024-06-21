@@ -7,7 +7,7 @@ const FlowCarousel = ({ vector, smallArrow }) => {
 
   const items = [
     { number: "01", label: "3D Conception & Design" },
-    { number: "02", label: "3D Conception & Design" },
+    { number: "02", label: "Interaction Design" },
     { number: "03", label: "INTERACTION DESIGN" },
     { number: "04", label: "VR World User Testing" },
   ];
@@ -53,7 +53,7 @@ const FlowCarousel = ({ vector, smallArrow }) => {
             justifyContent: "center",
             alignItems: "center",
             fontSize: "64px",
-            height: "200px",
+            marginBottom: "0",
           }}
         >
           {items[currentIndex].number}
