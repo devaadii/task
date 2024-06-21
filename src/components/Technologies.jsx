@@ -6,6 +6,8 @@ import unity from "../brands/image copy.png";
 import ocolus from "../brands/image copy 2.png";
 import vive from "../brands/image copy 3.png";
 import { useState } from "react";
+import left from "../icons/image copy 5.png";
+import right from "../icons/image copy 6.png";
 
 function Technologies() {
   const [currentIndex, setCurrentIndex] = useState(0);
@@ -87,9 +89,12 @@ function Technologies() {
         <img className="image-brand" src={ocolus} />
         <img className="image-brand" src={vive} />
       </div>
-      <div className="carousel-container">
+      <div className="carousel-container" style={{ margin: "20px auto" }}>
         <button className="carousel-control prev" onClick={prevSlide}>
-          &#10094;
+          <img
+            src={left}
+            style={{ background: "transparent", width: "40px" }}
+          />
         </button>
         <div className="carousel">
           <div
@@ -113,7 +118,10 @@ function Technologies() {
           </div>
         </div>
         <button className="carousel-control next" onClick={nextSlide}>
-          &#10095;
+          <img
+            src={right}
+            style={{ background: "transparent", width: "40px" }}
+          />
         </button>
       </div>
     </>

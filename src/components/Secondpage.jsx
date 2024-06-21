@@ -56,19 +56,22 @@ function Secondpage() {
                 fontWeight: "300",
                 display: "inline",
                 fontSize: "60px",
+                marginLeft: "40px",
               }}
             >
               <span
                 id="abouthydra"
                 style={{ color: "white", fontWeight: "700" }}
               >
-                ABOUT<br></br>HYDRA VR
+                ABOUT<br></br>
               </span>
+              HYDRA VR
               <p
                 id="vrtext"
                 style={{
                   fontWeight: "400",
                   fontSize: "16px",
+                  marginLeft: "0",
                 }}
               >
                 Eget mi proin sed libero enim sed faucibus turpis. Nisl rhoncus

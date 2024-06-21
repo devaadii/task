@@ -4,6 +4,8 @@ import img2 from "../images/cards-images/image copy.png";
 import img3 from "../images/cards-images/image copy 2.png";
 import img4 from "../images/cards-images/image copy 3.png";
 import arrow from "../images/image copy 2.png";
+import left from "../icons/image copy 5.png";
+import right from "../icons/image copy 6.png";
 const App = () => {
   const [currentIndex, setCurrentIndex] = useState(0);
   const totalSlides = 4;
@@ -17,9 +19,9 @@ const App = () => {
   };
 
   return (
-    <div className="carousel-container">
+    <div className="carousel-container" style={{ width: "100vw" }}>
       <button className="carousel-control prev" onClick={prevSlide}>
-        &#10094;
+        <img src={left} style={{ background: "transparent", width: "40px" }} />
       </button>
       <div className="carousel">
         <div
@@ -105,7 +107,7 @@ const App = () => {
         </div>
       </div>
       <button className="carousel-control next" onClick={nextSlide}>
-        &#10095;
+        <img src={right} style={{ background: "transparent", width: "40px" }} />
       </button>
     </div>
   );

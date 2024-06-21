@@ -1,4 +1,6 @@
 import React, { useState } from "react";
+import left from "../icons/image copy 5.png";
+import right from "../icons/image copy 6.png";
 
 const FlowCarousel = ({ vector, smallArrow }) => {
   const [currentIndex, setCurrentIndex] = useState(0);
@@ -65,13 +67,31 @@ const FlowCarousel = ({ vector, smallArrow }) => {
             }}
           >
             <img src={smallArrow} style={{ marginTop: "3px" }} />
-            <div style={{ display: "inline-block", margin: "0 20px" }}>
+            <div style={{ display: "flex", margin: "0 20px" }}>
               <span className="labelh">
-                <button
-                  onClick={prevSlide}
-                  style={{ ...buttonStyle, left: "10px" }}
-                >
-                  Previous
+                <button onClick={prevSlide}>
+                  <img
+                    src={left}
+                    style={{
+                      background: "transparent",
+                      width: "40px",
+                      position: "absolute",
+                      left: "10px",
+                      display: "inline",
+                    }}
+                  />
+                </button>
+                <button onClick={nextSlide}>
+                  <img
+                    src={right}
+                    style={{
+                      background: "transparent",
+                      width: "40px",
+                      position: "absolute",
+                      right: "10px",
+                      display: "inline",
+                    }}
+                  />
                 </button>
                 {items[currentIndex].label.split("\n").map((line, i) => (
                   <React.Fragment key={i}>
@@ -79,13 +99,6 @@ const FlowCarousel = ({ vector, smallArrow }) => {
                     <br />
                   </React.Fragment>
                 ))}
-
-                <button
-                  onClick={nextSlide}
-                  style={{ ...buttonStyle, right: "10px" }}
-                >
-                  Next
-                </button>
               </span>
             </div>
           </div>
