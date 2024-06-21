@@ -6,12 +6,25 @@ import linkedin from "../socials/image copy 2.png";
 import youtube from "../socials/image copy 3.png";
 import instagram from "../socials/image copy 4.png";
 import pinintrest from "../socials/image copy 5.png";
+import vector from "../vector/image copy 2.png";
 const Footer = () => {
   return (
-    <footer className="footer-container" style={{ background: "transparent" }}>
-      <div className="footer-content">
-        <div className="logo-section">
-          <img src={logo} alt="Hydra Logo" />
+    <footer
+      className="footer-container"
+      style={{
+        background: `url(${vector})`,
+        backgroundSize: "cover",
+        backgroundRepeat: "no-repeat",
+        backgroundPositionY: "40%",
+      }}
+    >
+      <div className="footer-content" style={{ background: "transparent" }}>
+        <div className="logo-section" style={{ background: "transparent" }}>
+          <img
+            style={{ background: "rgba(0,0,0,0)" }}
+            src={logo}
+            alt="Hydra Logo"
+          />
         </div>
         <div className="links-section">
           <div className="column">

@@ -85,10 +85,9 @@ function Form() {
             style={{
               border: "2px solid white",
               borderRadius: "40px",
-              width: "95%",
+              width: "100%",
 
               height: "5vh",
-              padding: "5px",
             }}
             type="text"
             className="form-control"
@@ -100,10 +99,9 @@ function Form() {
             style={{
               border: "2px solid white",
               borderRadius: "40px",
-              width: "90%",
+              width: "100%",
 
               height: "15vh",
-              padding: "5px",
             }}
             className="form-control"
             rows="5"

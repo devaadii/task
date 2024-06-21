@@ -687,7 +687,7 @@ textarea {
     height: 20vh;
   }
   .form-control {
-    width: 50vw;
+    width: 100%;
   }
   .form-subtitle {
     display: block;
@@ -695,7 +695,7 @@ textarea {
 }
 /* footer */
 .footer-container {
-  background-color: #1e1e1e; /* Adjust as per your design */
+  background: transparent;
   padding: 40px 0;
   color: white;
   font-family: "Montserrat", sans-serif;
@@ -721,12 +721,14 @@ textarea {
   display: flex;
   justify-content: space-between;
   flex: 2;
+  background: transparent;
 }
 .links-section h3 {
   font-size: 12px;
 }
 .column {
   margin-right: 20px;
+  background: transparent;
 }
 
 .column h3 {
@@ -741,6 +743,7 @@ textarea {
 
 .column ul li {
   margin-bottom: 10px;
+  background: transparent;
 }
 
 .column ul li a {
@@ -754,17 +757,22 @@ textarea {
   display: flex;
   flex-direction: column;
   align-items: center;
+  background: transparent;
 }
 
 .social-media-section h3 {
   font-size: 12px;
   margin-bottom: 20px;
+  background: transparent;
 }
 
 .social-icons {
   display: flex;
   justify-content: space-around;
   width: 100%;
+}
+ul {
+  background: transparent;
 }
 
 .social-icons a {
@@ -777,8 +785,9 @@ textarea {
 .copyright-section {
   text-align: center;
   padding: 20px 0;
-  background-color: #121212; /* Adjust as per your design */
+  background: transparent;
   font-size: 12px;
+  background: transparent;
 }
 .social {
   width: 32px;
@@ -809,15 +818,17 @@ textarea {
     justify-content: space-evenly;
     align-items: center;
     margin: 70px 0%;
-
+    background: transparent;
     padding: 0%;
   }
   .links-section {
     display: none;
+    background: transparent;
   }
   .social-media-section h3 {
     font-size: 20px;
     margin: 40px 0;
+    background: transparent;
   }
   .abouthydra {
     display: none;
@@ -828,13 +839,21 @@ textarea {
   .copyright-section {
     width: 70vw;
     margin: 0 auto;
+    background: transparent;
   }
   .copyright-section span {
     display: block;
     width: 100%;
     margin: 20px auto;
+    background: transparent;
+  }
+  .techs > button {
+    display: none;
   }
 }
 .button-foot {
   margin-right: auto;
+}
+textarea {
+  text-align: center;
 }
