@@ -59,20 +59,16 @@ function Technologies() {
           </p>{" "}
         </h3>{" "}
         <button
-          id="join_button"
+          className="join_button"
           style={{
             borderRadius: "100%",
             width: "4vw",
             height: "4vw",
-            display: "flex",
-            justifyContent: "center",
-            alignItems: "center",
             position: "absolute",
             bottom: "-2vw",
             borderColor: "background: rgba(14, 14, 14, 0.32)",
             border: "5px solid",
           }}
-          className="halfDiv"
         >
           <img
             src={arrow}

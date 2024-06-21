@@ -82,7 +82,7 @@ function Hero() {
             <div
               style={{
                 float: "left",
-                margin: "4px",
+                marginRight: "20px",
               }}
             >
               <img className="gps" src={gps} alt="loca" />
@@ -90,14 +90,16 @@ function Hero() {
             <div style={{ background: "rgba(0, 0, 0, 0)", margin: "8px" }}>
               <span className="big">Pay Us a Visit</span>
               <br />
-              <span className="small">Union St, Seattle, WA 98101</span>
+              <span className="small">
+                Union St, Seattle, WA 98101, United States
+              </span>
             </div>
           </div>
           <div className="single">
             <div
               style={{
                 float: "left",
-                margin: "4px",
+                marginRight: "20px",
               }}
             >
               <img className="call" src={call} alt="loca" />
@@ -118,7 +120,7 @@ function Hero() {
             <div
               style={{
                 float: "left",
-                margin: "4px",
+                marginRight: "20px",
               }}
             >
               <img className="mess" src={message} alt="loca" />
