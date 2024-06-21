@@ -893,3 +893,9 @@ ul {
 textarea {
   text-align: center;
 }
+a img {
+  background: transparent;
+}
+.social-icons {
+  background-color: transparent;
+}
